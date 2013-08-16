@@ -10,7 +10,7 @@ module.exports = function (app) {
 };
 
 function index(req, res) {
-    res.render('euler', { 'problems': problems });
+    res.render('euler', { 'problems': problems, 'title': "ProjectEulet.NET" });
 }
 
 function gcd(a, b) {
