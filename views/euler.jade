@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  p
+    | Solutions to 
+    a(href="http://projecteuler.net/problems", target="new") Project Euler
+    
+
+  ul
+    each problem in problems
+      li 
+        a(href="euler/problem" + problem) Problem  #{problem}
